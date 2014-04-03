@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 声明版本号以及编码方式 -->
+<resources>
+
+    <color name="white">#fff</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000</color>
+    <color name="seekbar_progress">#79badd</color>
+    <color name="text">#8bbac6</color>
+    <color name="button_background">#293e53</color>
+    <color name="playlist_odd">#4b6782</color>
+    <color name="playlist_even">#405b76</color> 
+</resources>

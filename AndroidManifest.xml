@@ -1,0 +1,53 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nozomi.ttplayer"
+    android:versionCode="1"
+    android:versionName="1.00" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.nozomi.ttplayer.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nozomi.ttplayer.FolderActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <service
+            android:name="com.nozomi.ttplayer.MusicService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.nozomi.ttplayer.action.PLAY" />
+                <action android:name="com.nozomi.ttplayer.action.REWIND" />
+                <action android:name="com.nozomi.ttplayer.action.PAUSE" />
+                <action android:name="com.nozomi.ttplayer.action.STOP" />
+                <action android:name="com.nozomi.ttplayer.action.SKIP" />
+                <action android:name="com.nozomi.ttplayer.action.SET_FOLDER" />
+                <action android:name="com.nozomi.ttplayer.action.DELETE" />
+                <action android:name="com.nozomi.ttplayer.action.INIT" />
+                <action android:name="com.nozomi.ttplayer.action.PLAY_SELECT" />
+                <action android:name="com.nozomi.ttplayer.action.SET_VOLUME" />
+                <action android:name="com.nozomi.ttplayer.action.GET_PROGRESS" />
+                <action android:name="com.nozomi.ttplayer.action.SET_PROGRESS" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
