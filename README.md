@@ -4,11 +4,11 @@ music player FOR ANDROID(540*960) ONLY!
 
 Feature:
 ========
-1.select folder to add to playlist.
+1.select folder to add to the playlist.
 
 2.sort by alphabet order(eng(a-z),then chs(pinyin a-z)).
 
-3.3 play modes:random,order,loop 
+3.3 play modes:random,order,loop.
 
 Download:
 --------
